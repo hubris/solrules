@@ -1,0 +1,8 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+load("//soltest:rules/sol2go.bzl",  "sol2go")
+
+sol2go(
+  name = "contract-go",
+  src = "Ballot.sol",
+  pkg = "ballot",
+  )
